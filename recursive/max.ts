@@ -12,4 +12,4 @@ function findMax(array: Array<number>): number | undefined {
   return findMax(array.slice(1));
 }
 
-console.log(findMax([2, 4, 6, 1])); // 6
+console.log(findMax([10, 2, 4, 6, 1])); // 10
