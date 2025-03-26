@@ -3,7 +3,7 @@
  * Time Complexity: O(log n)
  * Space Complexity: O(1)
  */
-function binarySearch(array: Array<number>, searchNum: number) {
+export function binarySearch(array: Array<number>, searchNum: number) {
   // Initialize pointers for the search range
   let lo = 0;
   let hi = array.length - 1;
@@ -29,4 +29,4 @@ function binarySearch(array: Array<number>, searchNum: number) {
   return -1; // Number not found in array
 }
 
-console.log(binarySearch([1, 2, 3, 4, 5], 4)); // 3
+// console.log(binarySearch([1, 2, 3, 4, 5], 4)); // 3
