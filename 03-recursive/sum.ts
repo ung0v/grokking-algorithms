@@ -1,4 +1,4 @@
-function sum(array: Array<number>) {
+function sumRecursive(array: Array<number>) {
   if (array.length === 0) {
     return 0;
   }
@@ -6,7 +6,7 @@ function sum(array: Array<number>) {
     return array[0];
   }
   const last = array.shift();
-  return last + sum(array);
+  return last + sumRecursive(array);
 }
 
-console.log(sum([2, 4, 6])); // 12
+console.log(sumRecursive([2, 4, 6])); // 12
